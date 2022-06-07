@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import LoginPage from '../LoginPage/LoginPage';
 import MovieIndexPage from '../MovieIndexPage/MovieIndexPage';
 import ActorIndexPage from '../ActorIndexPage/ActorIndexPage';
+import NavBar from "../../components/NavBar/NavBar";
 import './App.css';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
     <main className="App">
       { user ? 
         <>
+          <NavBar />
           <Switch>
             <Route path="/movies/actors">
               <ActorIndexPage />
