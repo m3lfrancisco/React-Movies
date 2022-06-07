@@ -12,10 +12,18 @@ export default function App() {
     <main className="App">
       { user ? 
         <>
-          <MovieIndexPage />
-          :
-          <LoginPage />
+          <Switch>
+            <Route path="/movies/actors">
+              <ActorIndexPage />
+            </Route>
+            <Route path="/movies">
+              <MovieIndexPage />
+            </Route>
+            <Redirect to="/movies" />
+          </Switch>
         </>
+        :
+        <LoginPage />
       }
     </main>
   );
