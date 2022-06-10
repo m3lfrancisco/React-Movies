@@ -1,5 +1,13 @@
-export default function MovieIndexPage() {
+import MovieCard from '../../components/MovieCard/MovieCard';
+import './MovieIndexPage.css';
+
+export default function MovieIndexPage({movies}) {
     return (
-        <h1>MovieIndexPage</h1>
+        <div className="container">
+                {movies.map((m, idx) => (
+                <MovieCard movie={m} index={idx} />
+                ))}
+            <h3>{movies.title}</h3>
+        </div>
     );
 }

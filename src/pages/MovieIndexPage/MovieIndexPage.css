@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.card {
+    background-color: #eeeeee;
+    border-style: solid;
+    margin: 1vw;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: rgba(150, 150, 150, 0.5);
+    text-align: center;
+    height: 30vh;
+    width: 30vw;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+.title {
+    margin: 1vw;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color:aqua;
+    border-radius: 4px;
+}
+
+.movie-link {
+    text-decoration: none;
+    color: #000000;
+}

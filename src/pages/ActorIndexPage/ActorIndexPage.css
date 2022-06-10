@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.actor-card {
+    background-color: #eeeeee;
+    margin: 1vw;
+    border-radius: 5px;
+    text-align: center;
+    height: 30vh;
+    width: 30vw;
+}
+
+.actor-name {
+    margin: 9vw 5vw 1vw 5vw;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: #ff3399;
+    border-radius: 4px;
+}

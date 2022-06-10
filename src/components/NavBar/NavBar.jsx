@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     return (
         <nav>
-            <Link to="/movies">Movies Index</Link>
+            <NavLink to="/movies">Movies</NavLink>
             &nbsp; | &nbsp;
-            <Link to="/movies/actors">Actor Index</Link>
-            
+            <NavLink to="/actors">Actors</NavLink>
         </nav>
     )
 }
